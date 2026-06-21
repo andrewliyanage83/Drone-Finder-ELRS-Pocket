@@ -1,20 +1,31 @@
-# Drone Finder ELRS — RadioMaster Pocket port
+# 🚁 Drone Finder ELRS — RadioMaster Pocket port
 
 A lost-drone finder Lua script for EdgeTX radios. It reads the ELRS/CRSF
 signal telemetry and gives Geiger-style audio feedback plus an on-screen
-signal indicator that gets stronger as you get closer to the drone.
+signal bar that gets stronger as you get closer to the drone.
 
 This repository is a **port of the original to the RadioMaster Pocket**
 (128×64 monochrome display).
 
-## About this fork
+## ✨ Features
+
+- 📡 Works with **ELRS / CRSF telemetry**
+- 📊 **Horizontal signal bar** that fills toward 100% as you get closer
+- 🔔 **Geiger-style audio feedback** (faster beeps = stronger signal)
+- 🎚️ Scroll-wheel (**ENTER**) toggles the sound on/off
+- 🔋 Battery voltage display with **automatic cell detection**
+- 🔴 Low-voltage warning (blinks below 3.4V per cell)
+- ⚡ Fast signal-drop response
+- 📟 Monochrome UI built for the **128×64 RadioMaster Pocket**
+
+## 🔗 About this fork
 
 This is a derivative work of
 [**p3gass/Drone-Finder-ELRS**](https://github.com/p3gass/Drone-Finder-ELRS),
 originally by **michalek.me**. All credit for the original concept and code
 goes to the upstream author. This fork only adapts it to a different radio.
 
-## Changes from upstream
+## 🔧 Changes from upstream
 
 The original targets color EdgeTX radios (e.g. RadioMaster TX15) and builds
 its interface with the LVGL graphics library, which is not available on
@@ -28,10 +39,10 @@ monochrome radios. This fork:
 
 Ported on 2026-06-21 by Andrew Liyanage.
 
-## Installation
+## 💾 Installation
 
-1. Copy `DrnFinderELRS-Pocket.lua` to the `SCRIPTS/TOOLS/` folder on the radio's
-   SD card (create the `TOOLS` folder if it does not exist).
+1. Copy `DrnFinderELRS-Pocket.lua` to the `SCRIPTS/TOOLS/` folder on the
+   radio's SD card (create the `TOOLS` folder if it does not exist).
 2. On the radio, open the **Tools** menu and run the script.
 3. Press the scroll-wheel (**ENTER**) to toggle the sound on/off. Press
    **RTN** to exit.
@@ -41,7 +52,7 @@ If the bar stays at 0% with the drone on, check that the `1RSS` / `RQly`
 sensors exist in the radio's telemetry list and adjust `readSignal()` if your
 sensor names differ.
 
-## License
+## 📜 License
 
 This program is free software, licensed under the **GNU General Public License
 v3.0 (GPL-3.0)**, the same license as the original work. See the
