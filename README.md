@@ -30,7 +30,7 @@ Ported on 2026-06-21 by Andrew Liyanage.
 
 ## Installation
 
-1. Copy `DroneFinder-Pocket.lua` to the `SCRIPTS/TOOLS/` folder on the radio's
+1. Copy `DrnFinderELRS-Pocket.lua` to the `SCRIPTS/TOOLS/` folder on the radio's
    SD card (create the `TOOLS` folder if it does not exist).
 2. On the radio, open the **Tools** menu and run the script.
 3. Press the scroll-wheel (**ENTER**) to toggle the sound on/off. Press
